@@ -1,0 +1,19 @@
+﻿<Window x:Class="HeavenGarden.Windows.BonusFineWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeavenGarden.Windows"
+        mc:Ignorable="d"
+        Title="BonusFineWindow" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <TextBlock Text="Садовник:"/>
+        <ComboBox x:Name="cmbGardener" DisplayMemberPath="FullName" SelectedValuePath="UserId"/>
+        <TextBlock Text="Сумма (положительная = премия, отрицательная = штраф):"/>
+        <TextBox x:Name="tbAmount"/>
+        <TextBlock Text="Причина:"/>
+        <TextBox x:Name="tbReason" TextWrapping="Wrap" Height="80"/>
+        <Button Content="Сохранить" Click="BtnSave_Click" Margin="0,15,0,0"/>
+        <Button Content="Отмена" Click="BtnCancel_Click"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="HeavenGarden.Windows.EditPlantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeavenGarden.Windows"
+        mc:Ignorable="d"
+        Title="EditPlantWindow" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <TextBlock Text="Название:"/>
+        <TextBox x:Name="tbName"/>
+        <TextBlock Text="Вид:"/>
+        <TextBox x:Name="tbSpecies"/>
+        <TextBlock Text="Причина смерти:"/>
+        <TextBox x:Name="tbCause"/>
+        <TextBlock Text="Дата смерти:"/>
+        <DatePicker x:Name="dpDeathDate"/>
+        <Button Content="Сохранить" Name="btnSave" Click="btnSave_Click" Margin="0,10,0,10"/>
+        <Button Content="Отмена" Name="btnCancel" Click="btnCancel_Click"/>
+    </StackPanel>
+</Window>
